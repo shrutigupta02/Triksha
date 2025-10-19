@@ -8,7 +8,7 @@ import AboutUs from "./Pages/AboutUs";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <BrowserRouter>
         <Navbar />
         <Routes>
