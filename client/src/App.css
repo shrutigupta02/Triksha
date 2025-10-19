@@ -87,8 +87,7 @@ main {
 }
 
 .home-container {
-  width: 100%;
-  max-width: 600px;
+  width: 100vw;
   padding: 3rem 2rem;
   background-color: #ffffff;
   border: 1px solid #000000;
