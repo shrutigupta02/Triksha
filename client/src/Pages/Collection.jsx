@@ -1,18 +1,21 @@
 import Card from "../Components/Card";
+import yellow from "../assets/yellow.jpg";
+import pink from "../assets/pink.jpg";
+import tanshui from "../assets/tanshui.jpg";
 
 export default function Collection() {
   const products = [
     {
       name: "Pink Corset Lehenga Co-Ord",
-      image: "src/assets/pink.jpg",
+      image: pink,
     },
     {
       name: "Yellow Tanshui Gown",
-      image: "src/assets/yellow.jpg",
+      image: yellow,
     },
     {
       name: "Fuschia Tanshui Gown",
-      image: "src/assets/tanshui.jpg",
+      image: tanshui,
     },
   ];
 

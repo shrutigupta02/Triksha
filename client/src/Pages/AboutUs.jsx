@@ -1,4 +1,6 @@
-import portrait from "./assets/portrait.jpg";
+import portrait from "../assets/portrait.jpg";
+import machine from "../assets/machine.jpg";
+import invite from "../assets/invite.jpg";
 
 export default function AboutUs() {
   return (
@@ -22,7 +24,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="aboutus-container">
-        <img src="/src/assets/machine.jpg" />
+        <img src={machine} />
         <div className="aboutus-paragraph">
           <h2>Our Promises</h2>
           <p>
@@ -40,7 +42,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="aboutus-container">
-        <img src="/src/assets/invite.jpg" />
+        <img src={invite} />
         <div className="aboutus-paragraph">
           <h2>Join the Triksha Journey</h2>
           <p>
