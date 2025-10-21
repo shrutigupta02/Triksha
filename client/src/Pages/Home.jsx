@@ -1,9 +1,8 @@
 export default function Home() {
   return (
     <div className="home">
-      home
       <div className="image-container">
-        <img src="src/assets/triksha_card_front.png" />
+        <img src="/src/assets/Gemini_Generated_Image_okp5fxokp5fxokp5.png" />
       </div>
       <div className="home-container"></div>
     </div>
