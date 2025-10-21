@@ -8,8 +8,8 @@
 body {
   font-family: "The Youngest Serif", serif;
   font-weight: 300;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ededed;
+  color: #080118;
   letter-spacing: 0.5px;
 }
 
@@ -297,6 +297,10 @@ main {
     padding: 2rem 1.5rem;
   }
 
+  .collection {
+    height: 150vh;
+  }
+
   .collection .heading {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -306,29 +310,70 @@ main {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 290px;
+    max-height: 500px;
   }
 
   .card img {
-    height: 320px;
+    max-height: 220px;
   }
 
   .home-container {
     padding: 2rem 1.5rem;
   }
 
+  .hero-text h1 {
+    font-size: 0.8rem;
+    letter-spacing: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.8rem;
+  }
+
   footer {
     padding: 2rem 1.5rem;
+  }
+
+  .aboutus h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .aboutus-container {
+    max-width: 330px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutus-container img {
+    max-width: 260px;
+    margin-bottom: 1rem;
   }
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: auto;
   padding: 20px 0;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: smaller;
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(10, 10, 10);
   color: rgb(119, 118, 118);
   cursor: default;
   position: relative;

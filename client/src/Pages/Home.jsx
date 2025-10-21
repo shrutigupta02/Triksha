@@ -8,7 +8,7 @@ export default function Home() {
           <p>Draped in culture and couture</p>
         </div>
       </div>
-      <div className="home-container"></div>
+      {/* <div className="home-container"></div> */}
     </div>
   );
 }

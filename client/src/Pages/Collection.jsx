@@ -3,22 +3,22 @@ import Card from "../Components/Card";
 export default function Collection() {
   const products = [
     {
-      name: "Blue Skirt",
-      image: "image-src",
+      name: "Pink Corset Lehenga Co-Ord",
+      image: "src/assets/pink.jpg",
     },
     {
-      name: "Lehenga",
-      image: "image-src",
+      name: "Yellow Tanshui Gown",
+      image: "src/assets/yellow.jpg",
     },
     {
-      name: "Red Kurta",
-      image: "image-src",
+      name: "Fuschia Tanshui Gown",
+      image: "src/assets/tanshui.jpg",
     },
   ];
 
   return (
     <div className="collection">
-      <div className="heading">Collections</div>
+      <div className="heading">Collection</div>
       <div className="collection-container">
         {products.map((product, index) => (
           <Card key={index} product={product} />
