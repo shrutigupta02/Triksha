@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Garamond", "Georgia", serif;
+  font-family: "The Youngest Serif", serif;
+  font-weight: 300;
   background-color: #ffffff;
   color: #000000;
   letter-spacing: 0.5px;
@@ -21,7 +22,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #181818;
+  background-color: #080118;
   border-bottom: 1px solid #ededed;
   color: #ededed;
   padding: 1rem;
@@ -72,19 +73,64 @@ main {
   width: 100%;
 }
 
+/* Update the .image-container to center its content */
 .image-container {
   width: 100%;
   height: 100vh;
-  background-color: #f9f9f9;
-  border: 1px solid #000000;
+  position: relative;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .image-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  height: 100%;
+  /* Make sure the image is at a lower z-index than the text */
+  z-index: 0;
+}
+
+/* The dark overlay styles (as before) */
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 30, 0.83);
+  /* The overlay should be above the image */
+  z-index: 1;
+}
+
+/* NEW: Styles for the text */
+.hero-text {
+  text-align: center;
+  color: #fff3ca;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* CRUCIAL for centering on top of the image */
+  position: absolute;
+  top: 50%; /* Move the top edge to the vertical center */
+  left: 50%; /* Move the left edge to the horizontal center */
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3rem;
+  font-weight: 50;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 5px;
 }
 
 .home-container {
@@ -121,6 +167,7 @@ main {
   font-weight: 300;
   letter-spacing: 3px;
   margin-bottom: 4rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   color: #000000;
 }
@@ -132,6 +179,7 @@ main {
   width: 100%;
   max-width: 1000px;
   padding: 0;
+  height: 100vh;
 }
 
 /* Card Component */
@@ -143,6 +191,7 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 .card:hover {
@@ -180,44 +229,51 @@ main {
   letter-spacing: 0.5px;
 }
 
-/* Footer */
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 3rem 2rem;
-  border-top: 1px solid #000000;
-  margin-top: auto;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  line-height: 1.8;
-}
-
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-footer a:hover {
-  opacity: 0.7;
-}
-
 /* About Us */
 .aboutus {
-  max-width: 700px;
   margin: 0 auto;
-  font-size: 0.95rem;
+  padding: 2rem;
+  font-size: 1.1rem;
   line-height: 1.9;
-  color: #000000;
+  color: #ededed;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #080118;
 }
 
 .aboutus h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1.2rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.aboutus-container {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.aboutus-container img {
+  width: fit-content;
+  max-width: 400px;
+  margin-right: 2rem;
+}
+
+.aboutus-paragraph {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: left;
+}
+
+.aboutus-paragraph h2 {
+  letter-spacing: 0.5rem;
 }
 
 /* Responsive Design */
@@ -263,4 +319,30 @@ footer a:hover {
   footer {
     padding: 2rem 1.5rem;
   }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: smaller;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: rgb(119, 118, 118);
+  cursor: default;
+  position: relative;
+}
+
+.footer a,
+.footer p {
+  font-weight: 600;
+  color: rgb(119, 118, 118);
+}
+
+.footer h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  margin: 3px;
 }

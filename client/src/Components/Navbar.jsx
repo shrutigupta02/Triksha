@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo" onClick={() => navigate("/")}>
-        TRIKSHA
+        T
       </div>
       <div className="list">
         <div onClick={() => navigate("/")}>HOME</div>
