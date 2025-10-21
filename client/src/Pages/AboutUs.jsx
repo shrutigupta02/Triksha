@@ -1,9 +1,11 @@
+import portrait from "./assets/portrait.jpg";
+
 export default function AboutUs() {
   return (
     <div className="aboutus">
       <h2>Behind the screens</h2>
       <div className="aboutus-container">
-        <img src="/src/assets/portrait.jpg" />
+        <img src={portrait} />
         <div className="aboutus-paragraph">
           <p>
             Triksha was founded by Priyanka Gupta, alongside her daughter, to
