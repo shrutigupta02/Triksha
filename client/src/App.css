@@ -286,11 +286,13 @@ main {
   .navbar .logo {
     font-size: 1.4rem;
     letter-spacing: 2px;
+    cursor: default;
   }
 
   .navbar .list {
     gap: 1.5rem;
     font-size: 0.8rem;
+    cursor: default;
   }
 
   main {
