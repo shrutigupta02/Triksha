@@ -1,21 +1,31 @@
 import Card from "../Components/Card";
-import yellow from "../assets/yellow.jpg";
-import pink from "../assets/pink.jpg";
-import tanshui from "../assets/tanshui.jpg";
+import purple from "../assets/shreya.jpg";
+import pink from "../assets/vinni.jpg";
+import tanshui from "../assets/shivi.jpg";
+import yellow from "../assets/lakshita.jpg";
+import tanya from "../assets/tanya.jpg";
 
 export default function Collection() {
   const products = [
     {
-      name: "Pink Corset Lehenga Co-Ord",
+      name: "RANG Pink Lehenga Co-Ord",
       image: pink,
     },
     {
-      name: "Yellow Tanshui Gown",
+      name: "RANG Purple Lehenga",
+      image: purple,
+    },
+    {
+      name: "RANG Rani Tanshui Gown",
+      image: tanshui,
+    },
+    {
+      name: "RANG Yellow Organza Lehenga",
       image: yellow,
     },
     {
-      name: "Fuschia Tanshui Gown",
-      image: tanshui,
+      name: "RANG Crepe Yellow Lehenga",
+      image: tanya,
     },
   ];
 

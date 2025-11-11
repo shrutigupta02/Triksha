@@ -1,4 +1,4 @@
-import home from "../assets/gemini.png";
+import home from "../assets/group.jpg";
 
 export default function Home() {
   return (
